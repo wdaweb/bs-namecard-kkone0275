@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./icons/bootstrap-icons.css">
+    <title>寶可夢名片</title>
+    <style>
+        .h-full {
+            height: 100vh;
+        }
+
+        .col-lg-9 {
+            --bs-card-border-width: 3px;
+        }
+
+        .word {
+            font-size: 56px;
+            font-weight: bolder;
+        }
+
+        .shadowr {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: -11%;
+            right: -8%;
+        }
+
+        .shadowr2 {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 70%;
+            left: -8%;
+        }
+
+        @media (max-width: 768px) {
+            .shadowr {
+                display: none;
+            }
+
+            .shadowr2 {
+                display: none;
+            }
+
+            .container {
+                width: 92%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container  h-full  row mx-auto gx-0 align-items-center  justify-content-center">
+        <div class="col-lg-8  card mb-3">
+            <div class="row g-2">
+                <div class=" col-md-5">
+                    <img class="shadowr" src="./image/shadow.png">
+                    <img class="shadowr2" src="./image/shadow2.png">
+                    <img src="./image/thrre.png" class="img-fluid rounded-start">
+                </div>
+                <div class=" col-md-6">
+                    <div class=" row flex-column pt-2 pt-sm-0 h-100 justify-content-md-center">
+                        <div
+                            class=" col mt-1 mb-2 pt-0 pt-sm-0 mt-md-3 mb-md-0 d-md-flex flex-md-column justify-content-center ps-5">
+                            <h5 class="m-0">GAME FREAK</h5>
+                            <p class="m-0 word">寶可夢 朱／紫</p>
+                            <h3 class="m-0">訓練中心核發</h3>
+                        </div>
+                        <div class=" col mb-2 fs-7 pb-3 mb-md-0 pb-md-0 ps-5">
+                            <p class="m-0">住址：Іванівка,14, Херсонська область, 75623</p>
+                            <p class="m-0">電話：02-※※※※※※※※</p>
+                            <p class="m-0">E-mail：alanchen@omg.com</p>
+                            <p class="m-0">網址：http://www.alanchen.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
